@@ -13,7 +13,8 @@ def select_img(sel_num):
         7 : 'img/tile.jpg',                     # Threshold Test용 타일
         8 : 'img/girl.png',                      # 기본여자 이미지
         9 : 'img/alpha1.jpg',                    # 알파벳 및 숫자 이미지
-        10: 'img/noise_alp.jpg'
+        10: 'img/Code_Sample.jpg',
+        11: 'img/DW_Fail_img.jpg'
     }.get(sel_num,'img/girl.png')
 
 
