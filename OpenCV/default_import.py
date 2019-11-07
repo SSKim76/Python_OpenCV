@@ -14,7 +14,8 @@ def select_img(sel_num):
         8 : 'img/girl.png',                      # 기본여자 이미지
         9 : 'img/alpha1.jpg',                    # 알파벳 및 숫자 이미지
         10: 'img/Code_Sample.jpg',
-        11: 'img/DW_Fail_img.jpg'
+        11: 'img/DW_Fail_img.jpg',
+        12: 'img/TW.jpg'                    # 트와이스
     }.get(sel_num,'img/girl.png')
 
 

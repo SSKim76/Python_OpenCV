@@ -60,7 +60,7 @@ import matplotlib.pyplot as plt
 #img_url = 'img/images_1.jpg'
 #img_url = 'img/threshold_original.png'      #여자이미지
 
-
+# ret : 임계값 저장, thr = 변환 이미지 저장
 ret, thr1 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY)
 ret, thr2 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY_INV)
 ret, thr3 = cv2.threshold(img, threshold, value, cv2.THRESH_MASK)
