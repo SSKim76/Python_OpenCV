@@ -92,7 +92,8 @@ def contour():
     ret , thr = cv2.threshold(imgray, 127, 255, 0)
     contours, _ = cv2.findContours(thr, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
-    cnt = contours[164]
+
+    cnt = contours[0]
     area = cv2.contourArea(cnt)
     perimeter = cv2.arcLength(cnt, True)
 
@@ -144,11 +145,13 @@ def contour1():
 
     impDef.close_window()
 
-#imgray = cv2.imread(impDef.select_img(10), cv2.COLOR_BGR2GRAY)
-img = cv2.imread(impDef.select_img(12))
+#imgray = cv2.imread(impDef.select_img(18), cv2.COLOR_BGR2GRAY)
+img = cv2.imread(impDef.select_img(18), cv2.COLOR_BGR2GRAY)
+
+#img = cv2.imread(impDef.select_img(18))
 imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-img1 = img
-img2 = img
+img1 = imgray.copy()
+img2 = imgray.copy()
 
 moment()
 contour()

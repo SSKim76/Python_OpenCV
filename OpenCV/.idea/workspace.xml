@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c736fc0f-c941-410b-a4d8-19dfb6ea2a64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Image_Contour_18.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/default_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/default_import.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thresholding.py" beforeDir="false" afterPath="$PROJECT_DIR$/thresholding.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,28 +17,54 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="ProjectId" id="1T8vTolqGGSMXmbb9PZDRtnnPq1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/default_import.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JST-0602\PycharmProjects\Python_OpenCV\OpenCV" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.Image_Contour_18">
-    <configuration name="Image_Contour_18" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.31_Template_Matching2">
+    <configuration name="27_Image_Histogram_투사" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -54,7 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Image_Contour_18.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/27_Image_Histogram_투사.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -63,7 +85,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Img_Contour_17" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="28_Fourier_Transform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +97,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Img_Contour_17.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/28_Fourier_Transform.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,12 +106,97 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="29_Fourier_Transform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OpenCV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/29_Fourier_Transform.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="30_Template_Matching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OpenCV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/30_Template_Matching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="31_Template_Matching2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OpenCV" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/31_Template_Matching2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.27_Image_Histogram_투사" />
+      <item itemvalue="Python.28_Fourier_Transform" />
+      <item itemvalue="Python.29_Fourier_Transform" />
+      <item itemvalue="Python.30_Template_Matching" />
+      <item itemvalue="Python.31_Template_Matching2" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Image_Contour_18" />
-        <item itemvalue="Python.Img_Contour_17" />
+        <item itemvalue="Python.31_Template_Matching2" />
+        <item itemvalue="Python.30_Template_Matching" />
+        <item itemvalue="Python.29_Fourier_Transform" />
+        <item itemvalue="Python.28_Fourier_Transform" />
+        <item itemvalue="Python.27_Image_Histogram_투사" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,5 +223,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1897" y="272" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589184739237">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state x="1897" y="272" key="#com.intellij.fileTypes.FileTypeChooser/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589184739237" />
+    <state x="1999" y="224" key="FileChooserDialogImpl" timestamp="1583718533742">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state x="1999" y="224" key="FileChooserDialogImpl/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1583718533742" />
+    <state width="949" height="301" key="GridCell.Tab.0.bottom" timestamp="1589523133855">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state width="949" height="301" key="GridCell.Tab.0.bottom/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589523133855" />
+    <state width="949" height="301" key="GridCell.Tab.0.center" timestamp="1589523133855">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state width="949" height="301" key="GridCell.Tab.0.center/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589523133855" />
+    <state width="949" height="301" key="GridCell.Tab.0.left" timestamp="1589523133855">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state width="949" height="301" key="GridCell.Tab.0.left/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589523133855" />
+    <state width="949" height="301" key="GridCell.Tab.0.right" timestamp="1589523133855">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state width="949" height="301" key="GridCell.Tab.0.right/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589523133855" />
+    <state x="255" y="52" key="SettingsEditor" timestamp="1583718654735">
+      <screen x="0" y="0" width="1280" height="994" />
+    </state>
+    <state x="255" y="52" key="SettingsEditor/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1583718654735" />
+    <state x="1907" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1589516709569">
+      <screen x="1280" y="-56" width="1920" height="1050" />
+    </state>
+    <state x="1907" y="306" key="com.intellij.ide.util.TipDialog/1280.-56.1920.1050/0.0.1280.994@1280.-56.1920.1050" timestamp="1589516709569" />
   </component>
 </project>
