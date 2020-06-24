@@ -30,7 +30,12 @@ def select_img(sel_num):
         26: 'img/26.jpg',                   # 히스토그램용 풍경
         28: 'img/28_BW_girl.jpg',           # 푸리에 Test용 이미지
         30: 'img/31.jpg',                   # Template Matching용 너구리 이미지
-        31: 'img/bam.png'                   # Template Image 밤
+        31: 'img/bam.png',                  # Template Image 밤
+        32: 'img/sdoku_1.jpg',              # 허프변환 Test용 스도쿠 이미지
+        33: 'img/33.jpg',                   # 허프변환 Test용 원찾기
+        34: 'img/34.jpg',                   # Watershed용 Test이미지(동전)
+        35: 'img/35.jpg',                   # GrabCut용 Test Image
+        100: 'img/Test_Vericode.bmp'        # Vericode 그라데이션 Test용
     }.get(sel_num,'img/girl.png')
 
 

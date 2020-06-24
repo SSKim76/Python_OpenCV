@@ -50,8 +50,9 @@
 """
 
 import numpy as np
-import cv2 as cv2
 import matplotlib.pyplot as plt
+import cv2
+import default_import as impDef
 
 
 #threshold_original.jpg
@@ -60,6 +61,12 @@ import matplotlib.pyplot as plt
 #img_url = 'img/images_1.jpg'
 #img_url = 'img/threshold_original.png'      #여자이미지
 
+
+#img = cv2.imread(img_url, cv2.IMREAD_GRAYSCALE)
+threshold = 150
+value = 255
+
+"""
 # ret : 임계값 저장, thr = 변환 이미지 저장
 ret, thr1 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY)
 ret, thr2 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY_INV)
@@ -82,9 +89,12 @@ cv2.imshow('TRUNC', thr8)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+"""
 
-def thresholding():
-    img = cv2.imread(img_url, cv2.IMREAD_GRAYSCALE)
+
+def thresholding(ImgNo, threshold, value):
+
+    img = cv2.imread(impDef.select_img(ImgNo), cv2.IMREAD_GRAYSCALE)
 
     ret, thr9 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY)
     thr10 = cv2.adaptiveThreshold(img, value, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
@@ -99,7 +109,7 @@ def thresholding():
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-thresholding()
+
 
 """
     >>> test_list = ['one', 'two', 'three'] 
@@ -114,8 +124,10 @@ thresholding()
     print(i) 문장을 수행하고 리스트의 마지막 요소까지 이것을 반복한다.
 """
 
-def thresholding2():
-    img = cv2.imread(img_url, cv2.IMREAD_GRAYSCALE)
+def thresholding2(ImgNo, threshold, value):
+
+
+    img = cv2.imread(impDef.select_img(ImgNo), cv2.IMREAD_GRAYSCALE)
 
     # 전역 Thresholdt 적용
     ret, thr12 = cv2.threshold(img, threshold, value, cv2.THRESH_BINARY)
@@ -151,4 +163,6 @@ def thresholding2():
 
     plt.show()
 
-thresholding2()
+
+thresholding(100, 200, 255)
+#thresholding2(100, 100, 255)
