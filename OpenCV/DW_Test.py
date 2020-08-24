@@ -11,17 +11,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 import os
+import importFunc as impFunc
 
 
 def histogram():
 
-    inPath = "C:/Users/JST-0602/PycharmProjects/Python_OpenCV/OpenCV/DW_Test/DW_Img"
-    outPath = "DW_Test/DW_Result/"
+    inPath = "DW_202006/Fail_0630_14/"
+    outPath = "DW_202006/Fail_0630_14_Result/"
 
     fileList = os.listdir(inPath)
 
     for file in fileList:
-        imgName = "DW_Test/DW_Img/" + file
+        imgName = inPath + file
         img = cv2.imread(imgName, cv2.IMREAD_GRAYSCALE)
         #print(imgName)
         #cv2.imshow('gray', img)
@@ -42,7 +43,30 @@ def histogram():
         #impDef.close_window()
 
 
-histogram()
+
+def conImg():
+    inPath = "DW_202006/Fail_0624_1132/"
+    outPath = "DW_202006/Fail_0624_1132_Result/"
+
+    fileList = os.listdir(inPath)
+
+    sTime = impFunc.time.time()
+
+    for file in fileList:
+        imgName = inPath + file
+        img = cv2.imread(imgName, cv2.IMREAD_GRAYSCALE)
+
+        img2 = impFunc.cvtGamma(img, 3)
+
+        outputFilename = outPath + file
+        cv2.imwrite(outputFilename, img2)
+    print('Changing Time : ', impFunc.time.time()-sTime)
+
+
+
+
+conImg()
+#histogram()
 
 
 

@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 import os
+import importFunc as impFunc
 
 
 def onMouse(x):
@@ -73,7 +74,11 @@ def imgTest(fileName):
 
 #imgTest("K-001.jpg")
 #imgTest("K-003.jpg")
-imgTest("K-007.jpg")
+#imgTest("K-007.jpg")
+
+
+
+
 
 
 

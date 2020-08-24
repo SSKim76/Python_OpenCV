@@ -35,10 +35,16 @@ def select_img(sel_num):
         33: 'img/33.jpg',                   # 허프변환 Test용 원찾기
         34: 'img/34.jpg',                   # Watershed용 Test이미지(동전)
         35: 'img/35.jpg',                   # GrabCut용 Test Image
+        37: 'img/37_corner.png',            # Corner 검출용 Image
+        38: 'img/38_butterfly.png',         # SIFT Test용 나비
+        42: 'img/42_ORB.png.',              # ORB용 Image - 암호와 해킹
+        43: 'img/43_ORB.png',               # ORB용 회전 Image - 암호와 해킹
+        44: 'img/43_1.png',                 # 이미지매칭용 등대가 있는 마을 사진
+        45: 'img/43_2.png',                 # 이미지매칭용 액자를든 소녀 사진
         100: 'img/Test_Vericode.bmp'        # Vericode 그라데이션 Test용
     }.get(sel_num,'img/girl.png')
 
 
 def close_window():
     cv2.waitKey(0)
-    cv2.destroyAllWindows( )
+    cv2.destroyAllWindows()

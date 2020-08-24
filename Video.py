@@ -13,6 +13,7 @@ def showVideo():
     except:
         print('카메라 구동실패!!')
         return
+
     videoWidth = 320
     videoHeight = 240
     cap.set(3, videoWidth)     #해상도 설정

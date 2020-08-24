@@ -178,6 +178,12 @@ def addClahe(img):
 
     return img2
 
+
+def addEqualizeHist(grayImg):
+    equ = cv2.equalizeHist(img_grayScale)
+
+    return equ
+
 def testContour(getImg, savePath = 'img/'):
     global thrValue, MIN, MAX
 
@@ -225,7 +231,7 @@ def testContour(getImg, savePath = 'img/'):
             #print('area = %s, cnt = %s'%(area, cnt+1))
             
             #if area >= MIN and area <= MAX:
-            if area <= MIN and area >= MAX:
+            if area <= MIN and area >= MAX:     # White 기준으로 동작...??? 검정색 검출시 반대로???
                 #cv2.drawContours(viewImg, [contours[cnt]], 0, (0,0,255), 1)
                 cv2.drawContours(thr, [contours[cnt]], 0, (0, 0, 255), -1)
 
@@ -266,6 +272,7 @@ def canny(img):
         #imgCanny = cv2.dilate(imgCanny, kernel, iterations =1)
 
         cv2.imshow('canny', imgCanny)
+
         k = cv2.waitKey(1) & 0xFF
         if k == ord('p'):
             # 이미지 저장
@@ -415,7 +422,7 @@ def imgReDraW2(img, tileSize = 3, step = 1):
 
     #Image 정보 획득
     height, width = gimg.shape
-    rtnImg = np.zeros((height, width), np.uint16)
+    rtnImg = np.zeros((height, width), np.uint8)
 
     print('width = %s, height = %s'%(width, height))
 
@@ -946,20 +953,25 @@ for file in fileList:
     # adaptivMean : 75 & Erosion : 3 & Dilation : 4~7 -> 약 0.002초 이내(성공 :  28 , 실패 : 12 )
     rtnImg = adaptiveMean(img, 75)
     erosionImg = erosion(rtnImg)
+
     #dilationImg3 = dilation(erosionImg, 3)
     dilationImg4 = dilation(erosionImg, 4)
     dilationImg5 = dilation(erosionImg, 5)
     dilationImg6 = dilation(erosionImg, 6)
     dilationImg7 = dilation(erosionImg, 7)
 
+
     rtnImgName = outPath+str(i)+"_AdM75"+".jpg"
+    erosionImgName = outPath+str(i)+"_AdM75_E3.jpg"
     #dilationImgName3 = outPath + str(i) + "_AdM75_E3_D3" + ".jpg"
     dilationImgName4 = outPath + str(i) + "_AdM75_E3_D4" + ".jpg"
     dilationImgName5 = outPath + str(i) + "_AdM75_E3_D5" + ".jpg"
     dilationImgName6 = outPath + str(i) + "_AdM75_E3_D6" + ".jpg"
     dilationImgName7 = outPath + str(i) + "_AdM75_E3_D7" + ".jpg"
     print(time.time( ) - sTime)
+
     cv2.imwrite(rtnImgName, rtnImg)
+    cv2.imwrite(erosionImgName, erosionImg)
     #cv2.imwrite(dilationImgName3, dilationImg3)
     cv2.imwrite(dilationImgName4, dilationImg4)
     cv2.imwrite(dilationImgName5, dilationImg5)
